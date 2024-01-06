@@ -160,11 +160,11 @@ button {
   display: none;
 }
 
-.section-tasks-list li.editMode .task-input {
+.section-tasks-list .edit-mode .task-input {
   display: inline-block;
   width: 224px;
 }
 
-.section-tasks-list li.editMode .task-label {
+.section-tasks-list .edit-mode .task-label {
   display: none;
 }
