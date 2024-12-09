@@ -16,8 +16,9 @@ var completedTasksHolder=document.getElementById("completed");//completed-tasks
 
 //New task list item
 var createNewTaskElement=function(taskString){
-
+    
     var listItem=document.createElement("li");
+    listItem.className = "list__item";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -45,6 +46,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="button button_delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className = "button__img"
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -82,8 +84,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector(".input_text");
+    var label=listItem.querySelector(".item__task");
     var editBtn=listItem.querySelector(".button_edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
